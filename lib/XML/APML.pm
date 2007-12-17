@@ -23,7 +23,7 @@ use XML::APML::Application;
 
 use Carp ();
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use constant DEFAULT_NS => 'http://www.apml.org/apml-0.6';
 use constant DEFAULT_VERSION => '0.6';
@@ -262,10 +262,8 @@ sub parse_dom {
     my $defaultprofile = $root->findvalue('*[local-name()=\'Body\']/@defaultprofile');
     $apml->defaultprofile($defaultprofile);
     my @profiles = $root->findnodes('*[local-name()=\'Body\']/*[local-name()=\'Profile\']');
-    print scalar(@profiles)." of profiles found\n";
     $apml->add_profile(XML::APML::Profile->parse_node($_)) for @profiles;
     my @apps = $root->findnodes('*[local-name()=\'Body\']/*[local-name()=\'Applications\']/*[local-name()=\'Application\']');
-    print scalar(@apps)." of profiles found\n";
     $apml->add_application(XML::APML::Application->parse_node($_)) for @apps;
     $apml;
 }

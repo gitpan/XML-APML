@@ -1,5 +1,8 @@
 Revision history for Perl extension XML::APML.
 
+0.02  Wed Dec 12 12:27:11 2007
+	- removed debug code.
+
 0.01  Wed Dec 12 12:27:11 2007
 	- original version; created by h2xs 1.23 with options
 		-X -A XML::APML
