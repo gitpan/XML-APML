@@ -1,5 +1,9 @@
 Revision history for Perl extension XML::APML.
 
+0.03  Wed Jan 16 14:41:00 2008
+	- added ImplicitData document
+	- fixed Makefile.PL
+
 0.02  Wed Dec 12 12:27:11 2007
 	- removed debug code.
 
