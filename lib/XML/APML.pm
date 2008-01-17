@@ -23,7 +23,7 @@ use XML::APML::Application;
 
 use Carp ();
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 use constant DEFAULT_NS => 'http://www.apml.org/apml-0.6';
 use constant DEFAULT_VERSION => '0.6';

@@ -1,5 +1,8 @@
 Revision history for Perl extension XML::APML.
 
+0.04  Thu Jan 17 10:30:00 2008
+  - added inc/Module/Install to MANIFEST
+
 0.03  Wed Jan 16 14:41:00 2008
 	- added ImplicitData document
 	- fixed Makefile.PL
